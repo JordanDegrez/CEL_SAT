@@ -4,7 +4,7 @@
     height: calc(100vh - 30px);
     overflow: hidden;
     margin-left: auto !important;
-    margin-right: auto !important;x
+    margin-right: auto !important;
 }
 .image{
     width: 80%;
@@ -28,7 +28,7 @@
     flex-flow: wrap;
     gap: 4px;
 }
-.puces div span{
+.puces div button{
     border-radius: 4px;
     display: flex;
     align-items: center;
@@ -36,6 +36,15 @@
     font-size: 32px;
     justify-content: center;
     background-color:rgba(207, 207, 207, 0.1);
+    border-style: none;
+}
+.rouge::before{
+    font-size: 1em;
+    width: 50px;
+    padding: 4px;
+    color: #fff;
+    border-radius: 4px;
+    background: rgba(255, 0, 0, 1);
 }
 #CEL_309::before{
     content: '309';
@@ -43,10 +52,4 @@
     position: absolute;
     left: 30.4%;
     display: block;
-    font-size: 1em;
-    width: 50px;
-    padding: 4px;
-    color: #fff;
-    border-radius: 4px;
-    background: rgba(255, 0, 0, 1);
 }
