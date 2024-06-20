@@ -28,7 +28,6 @@
     flex-flow: wrap;
     gap: 4px;
 }
-
 article {
     border-radius: 4px;
     display: flex;
@@ -41,7 +40,6 @@ article {
     background-color:rgba(207, 207, 207, 0.1);
     border-style: none;
 }
-
 article input {
     position: absolute;
     top: 0;
@@ -51,8 +49,8 @@ article input {
     opacity: 0;
     cursor: pointer;
     margin: 0 !important;
-  }
-
+    z-index: 10;
+}
 article div {
     width: 100%;
     height: 100%;
@@ -62,30 +60,30 @@ article div {
     line-height: 25px;
     transition: .5s ease;
 }
-
-.rouge:checked ~ div {
+.CEL_309:checked  ~ div {
     background-color: rgba(255, 0, 0, 1);
     color: #fff;
-  }
-
+}
 .rouge::before{
     font-size: 1em;
+    position: fixed;
     width: 50px;
     padding: 4px;
     color: #fff;
     border-radius: 4px;
     background: rgba(255, 0, 0, 1);
-    opacity: 0;
 }
-.rouge:checked::before{
-    opacity: 1;
-}
-#CEL_309::before{
+.SAT_309::before{
     content: '309';
     top: 59%;
     position: fixed;
     left: 30.4%;
     display: block;
 }
-  
+.CEL_309  ~ span {
+    opacity: 0 !important;
+}
+.CEL_309:checked  ~ span {
+    opacity: 1 !important;
+}
 
